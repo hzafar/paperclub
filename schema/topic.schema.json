@@ -1,0 +1,27 @@
+{
+    "$schema":"http://json-schema.org/draft-07/schema#",
+    "title":"Topic",
+    "description":"A CS topic or subtopic.",
+    "type":"object",
+    "properties": { 
+        "id": {
+            "description":"The classification number assigned to the topic/subtopic itself (not including broader terms).",
+            "type":"string"
+        },
+        "name": {
+            "description":"The name of the topic, as taken from the 2012 ACM Computing Classification.",
+            "type":"string"
+        },
+        "broaderTerm": {
+            "description":"Class number of parent topic.",
+            "type":"string"
+        },
+        "narrowerTerms": {
+            "type":"array",
+            "items": {
+                "type":"string"
+            }
+        }
+    },
+    "required": ["id", "name", "broaderTerm", "narrowerTerms"]
+}

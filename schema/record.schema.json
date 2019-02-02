@@ -70,17 +70,8 @@
         },
         "topic": {
             "title":"Topic",
-            "description":"A topic heading (and optional subheading).",
-            "type":"object",
-            "properties": {
-                "heading": {
-                    "type":"string"
-                },
-                "subheading": {
-                    "type":"string"
-                }
-            },
-            "required": ["heading", "subheading"]
+            "description":"Class number for topic/subtopic heading.",
+            "type":"string"
         },
         "relationship": {
             "description":"A relationship between this and other resources.",
