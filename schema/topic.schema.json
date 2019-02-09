@@ -15,13 +15,7 @@
         "broaderTerm": {
             "description":"Class number of parent topic.",
             "type":"string"
-        },
-        "narrowerTerms": {
-            "type":"array",
-            "items": {
-                "type":"string"
-            }
         }
     },
-    "required": ["id", "name", "broaderTerm", "narrowerTerms"]
+    "required": ["id", "name", "broaderTerm"]
 }
